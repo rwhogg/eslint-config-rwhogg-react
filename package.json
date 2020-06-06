@@ -1,0 +1,23 @@
+{
+    "name": "eslint-config-rwhogg-react",
+    "version": "0.1.0",
+    "keywords": [
+        "eslint"
+    ],
+    "author": "Bob Wombat Hogg",
+    "repository": "https://github.com/rwhogg/eslint-config-rwhogg.git",
+    "dependencies": {
+        "eslint": "^7.1.0",
+        "eslint-config-rwhogg": "0.6.1"
+    },
+    "main": "index.js",
+    "license": "Unlicense",
+    "scripts": {
+        "test": "eslint -c index.js index.js"
+    },
+    "files": [
+        "LICENSE.md",
+        "README.md",
+        "index.js"
+    ]
+}
