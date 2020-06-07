@@ -8,7 +8,14 @@
     "repository": "https://github.com/rwhogg/eslint-config-rwhogg.git",
     "dependencies": {
         "eslint": "^7.1.0",
-        "eslint-config-rwhogg": "0.6.1"
+        "eslint-config-rwhogg": "0.6.1",
+        "eslint-plugin-react": "^7.20.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0"
+    },
+    "peerDependencies": {
+        "babel-eslint": "^10.1.0"
     },
     "main": "index.js",
     "license": "Unlicense",
