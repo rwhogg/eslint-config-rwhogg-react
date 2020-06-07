@@ -2,10 +2,11 @@ module.exports = {
     env: {
         browser: true,
         es6: true,
+        jest: true,
     },
     extends: [
         "rwhogg",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
     ],
     "parser": "babel-eslint",
     "parserOptions": {
@@ -13,11 +14,6 @@ module.exports = {
         "ecmaFeatures": {
             "jsx": true,
         },
-    },
-    "env": {
-        "browser": true,
-        "es2020": true,
-        "jest": true,
     },
     "settings": {
         "react": {
