@@ -2,7 +2,8 @@
     "name": "eslint-config-rwhogg-react",
     "version": "0.1.0",
     "keywords": [
-        "eslint"
+        "eslint",
+        "react"
     ],
     "author": "Bob Wombat Hogg",
     "repository": "https://github.com/rwhogg/eslint-config-rwhogg.git",
