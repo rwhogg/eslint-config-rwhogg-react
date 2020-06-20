@@ -8,8 +8,8 @@
     "author": "Bob Wombat Hogg",
     "repository": "https://github.com/rwhogg/eslint-config-rwhogg.git",
     "dependencies": {
-        "eslint": "^7.1.0",
-        "eslint-config-rwhogg": "0.7.0",
+        "eslint": "^7.3.0",
+        "eslint-config-rwhogg": "0.8.0",
         "eslint-plugin-react": "^7.20.0"
     },
     "devDependencies": {
