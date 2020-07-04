@@ -5,7 +5,7 @@ module.exports = {
         jest: true,
     },
     extends: [
-        "rwhogg",
+        "@rwhogg/eslint-config-base",
         "plugin:react/recommended",
     ],
     "parser": "babel-eslint",

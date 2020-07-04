@@ -1,9 +1,10 @@
 dependencies:
-  eslint: 7.3.0
-  eslint-config-rwhogg: 0.8.0
-  eslint-plugin-react: 7.20.0_eslint@7.3.0
+  '@rwhogg/eslint-config-base': 0.9.0
+  eslint: 7.4.0
+  eslint-plugin-react: 7.20.0_eslint@7.4.0
 devDependencies:
-  babel-eslint: 10.1.0_eslint@7.3.0
+  babel-eslint: 10.1.0_eslint@7.4.0
+  react: 16.13.1
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.1:
@@ -94,6 +95,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-AD3AwWBSz0AWF0AkCN9VPiWrvldXq+/e3cHa4J89vo4ymjz1XwrBFFVZmkJTsQIPNk+ZVomPSXUJqq8yyjZsng==
+  /@rwhogg/eslint-config-base/0.9.0:
+    dependencies:
+      eslint: 7.4.0
+      eslint-plugin-fp: 2.3.0_eslint@7.4.0
+      eslint-plugin-sonarjs: 0.5.0_eslint@7.4.0
+    dev: false
+    resolution:
+      integrity: sha512-cTI8jVpv6z703A7uSgSSgGKKU+ZL8q0EuqyvfbRrrVH3BOdKpHjbjzxes5wtrodGEaCD0l70Sy2CliB9St2gsw==
+      tarball: download/@rwhogg/eslint-config-base/0.9.0/e9b7d2fb79a54c5dc395c348ab850a5a2f89c1841e60bd55f076d722d21f2c01
   /@types/color-name/1.1.1:
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
@@ -168,13 +178,13 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
-  /babel-eslint/10.1.0_eslint@7.3.0:
+  /babel-eslint/10.1.0_eslint@7.4.0:
     dependencies:
       '@babel/code-frame': 7.10.1
       '@babel/parser': 7.10.2
       '@babel/traverse': 7.10.1
       '@babel/types': 7.10.2
-      eslint: 7.3.0
+      eslint: 7.4.0
       eslint-visitor-keys: 1.2.0
       resolve: 1.17.0
     dev: true
@@ -341,17 +351,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==
-  /eslint-config-rwhogg/0.8.0:
-    dependencies:
-      eslint: 7.3.0
-      eslint-plugin-fp: 2.3.0_eslint@7.3.0
-    dev: false
-    resolution:
-      integrity: sha512-kWLPTE2LVkXVYGrSVMXEI/uJbLF95IaadF8LoCJSiQMRSocqDQ5ROEZ/zjctH9MnYJ0pyLD6OZYMuhxxJCeN0w==
-  /eslint-plugin-fp/2.3.0_eslint@7.3.0:
+  /eslint-plugin-fp/2.3.0_eslint@7.4.0:
     dependencies:
       create-eslint-index: 1.0.0
-      eslint: 7.3.0
+      eslint: 7.4.0
       eslint-ast-utils: 1.1.0
       lodash: 4.17.15
       req-all: 0.1.0
@@ -362,11 +365,11 @@ packages:
       eslint: '>=3'
     resolution:
       integrity: sha1-N20qEIcQ6YGYC9w4deO5kg2gSJw=
-  /eslint-plugin-react/7.20.0_eslint@7.3.0:
+  /eslint-plugin-react/7.20.0_eslint@7.4.0:
     dependencies:
       array-includes: 3.1.1
       doctrine: 2.1.0
-      eslint: 7.3.0
+      eslint: 7.4.0
       has: 1.0.3
       jsx-ast-utils: 2.3.0
       object.entries: 1.1.2
@@ -383,6 +386,16 @@ packages:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7
     resolution:
       integrity: sha512-rqe1abd0vxMjmbPngo4NaYxTcR3Y4Hrmc/jg4T+sYz63yqlmJRknpEQfmWY+eDWPuMmix6iUIK+mv0zExjeLgA==
+  /eslint-plugin-sonarjs/0.5.0_eslint@7.4.0:
+    dependencies:
+      eslint: 7.4.0
+    dev: false
+    engines:
+      node: '>=6'
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+    resolution:
+      integrity: sha512-XW5MnzlRjhXpIdbULC/qAdJYHWw3rRLws/DyawdlPU/IdVr9AmRK1r2LaCvabwKOAW2XYYSo3kDX58E4MrB7PQ==
   /eslint-scope/5.1.0:
     dependencies:
       esrecurse: 4.2.1
@@ -403,7 +416,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-WFb4ihckKil6hu3Dp798xdzSfddwKKU3+nGniKF6HfeW6OLd2OUDEPP7TcHtB5+QXOKg2s6B2DaMPE1Nn/kxKQ==
-  /eslint/7.3.0:
+  /eslint/7.4.0:
     dependencies:
       '@babel/code-frame': 7.10.1
       ajv: 6.12.2
@@ -445,7 +458,7 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-dJMVXwfU5PT1cj2Nv2VPPrKahKTGdX+5Dh0Q3YuKt+Y2UhdL2YbzsVaBMyG9HC0tBismlv/r1+eZqs6SMIV38Q==
+      integrity: sha512-gU+lxhlPHu45H3JkEGgYhWhkR9wLHHEXC9FbWFnTlEkbKyZKWgWRLgf61E8zWmBuI6g5xKBph9ltg3NtZMVF8g==
   /espree/7.1.0:
     dependencies:
       acorn: 7.2.0
@@ -727,7 +740,6 @@ packages:
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
-    dev: false
     hasBin: true
     resolution:
       integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -752,7 +764,6 @@ packages:
     resolution:
       integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
   /object-assign/4.1.1:
-    dev: false
     engines:
       node: '>=0.10.0'
     resolution:
@@ -862,7 +873,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: false
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   /punycode/2.1.1:
@@ -871,9 +881,18 @@ packages:
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
   /react-is/16.13.1:
-    dev: false
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+  /react/16.13.1:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
   /regenerator-runtime/0.13.5:
     dev: false
     resolution:
@@ -1113,7 +1132,8 @@ packages:
     resolution:
       integrity: sha512-7jXDIFXh5yJ/orPn4SXjuVrWWoi4Cr8jfV1eHv9CixKSbU+jY4mxfrBwAuDvupPNKpMUY+FeIqsVw/JLT9+B8g==
 specifiers:
+  '@rwhogg/eslint-config-base': 0.9.0
   babel-eslint: ^10.1.0
-  eslint: ^7.3.0
-  eslint-config-rwhogg: 0.8.0
+  eslint: ^7.4.0
   eslint-plugin-react: ^7.20.0
+  react: ^16.13.1
